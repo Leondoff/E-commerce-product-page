@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <!-- Header Section -->
+   <header class="header" id="header">
+    <div class="header_content container flex">
+      <div class="header_menu">
+        <div class="logo flex">
+          <a href="index.html"><img src="images/logo.svg" alt="logo"/></a>
+          <ul class="navigation flex" id="nav">
+            <li class="close_btn" id="close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </li>
+            <li><a class="nav_link" href="#">Collections</a></li>
+            <li><a class="nav_link" href="#">Men</a></li>
+            <li><a class="nav_link" href="#">Women</a></li>
+            <li><a class="nav_link" href="#">About</a></li>
+            <li><a class="nav_link" href="#">Contact</a></li>
+          </ul>
+          <div class="toggle_btn" id="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="header_info flex">
+        <div class="cart_btn">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="user">
+          <img src="images/image-avatar.png" alt="image-avatar" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main class="main" id="main">
+    <!-- Overlay -->
+    <div class="overlay">
+      <div class="left_side">
+        <div class="overlay_btn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="main_image">
+          <img src="images/image-product-1.jpg" alt="image-product-1" class="main_img" id="overlay-img"/>
+          <div class="handles">
+            <button class="handle left_handle1">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="handle right_handle1">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="choose_images">
+          <div class="smallImage">
+            <img src="images/image-product-1.jpg" alt="sm-img" class="small-img1" />
+          </div>
+          <div class="smallImage">
+            <img src="images/image-product-2.jpg" alt="sm-img" class="small-img1" />
+          </div>
+          <div class="smallImage">
+            <img src="images/image-product-3.jpg" alt="sm-img" class="small-img1" />
+          </div>
+          <div class="smallImage">
+            <img src="images/image-product-4.jpg" alt="sm-img" class="small-img1" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Section -->
+    <section class="product_section container">
+      <div class="left_side">
+        <div class="main_image">
+          <img src="images/image-product-1.jpg" alt="image-product-1" class="main_img" id="mainImg" />
+        </div>
+        <div class="choose_images">
+          <div class="smallImage smallImageBorder">
+            <img src="images/image-product-1.jpg" alt="sm-img" class="small-img" />
+          </div>
+          <div class="smallImage">
+            <img src="images/image-product-2.jpg" alt="sm-img" class="small-img"/>
+          </div>
+          <div class="smallImage">
+            <img src="images/image-product-3.jpg" alt="sm-img" class="small-img" />
+          </div>
+          <div class="smallImage">
+            <img src="images/image-product-4.jpg" alt="sm-img" class="small-img" />
+          </div>
+        </div>
+      </div>
+      <div class="right_side">
+        <h3 class="subtitle">Sneaker Company</h3>
+        <h1 class="title">Fall Limited Edition <br />Sneakers</h1>
+        <p class="paragraph">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price flex">
+          <div class="prices">
+            <h2 class="new_price1">$125.00</h2>
+            <h3 class="old_price"><del>$250.00</del></h3>
+          </div>
+          <h3 class="sale">50%</h3>
+        </div>
+        <div class="addToCart flex">
+          <div class="quantity flex">
+            <span class="minus">-</span>
+            <h3 class="number">0</h3>
+            <span class="plus">+</span>
+          </div>
+          <button class="toCart_btn">
+            <span><i class="fa-solid fa-cart-shopping"></i></span> Add To Cart
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
